@@ -26,7 +26,7 @@ public class Contact implements Serializable {
     public  String name;
 
     @NotNull
-    @Pattern("/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,4}$/i"))/*regexp=.getString(R.string.emailPattern*/
+    //@Pattern("/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,4}$/i"))/*regexp=.getString(R.string.emailPattern*/
     public  String email;
 
     @NotNull
