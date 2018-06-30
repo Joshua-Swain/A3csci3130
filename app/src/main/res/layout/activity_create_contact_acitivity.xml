@@ -32,7 +32,8 @@
         android:id="@+id/address"
         android:layout_width="395dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="124dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="112dp"
         android:hint="Address"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/name" />
@@ -41,7 +42,8 @@
         android:id="@+id/pt"
         android:layout_width="395dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="268dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="220dp"
         android:hint="Province/Territtory"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/name" />
@@ -50,7 +52,8 @@
         android:id="@+id/business"
         android:layout_width="395dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="196dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="168dp"
         android:hint="Business"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/name" />
@@ -58,8 +61,9 @@
     <EditText
         android:id="@+id/number"
         android:layout_width="395dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="60dp"
         android:hint="Phone Number"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/name" />
@@ -70,7 +74,7 @@
         android:layout_height="47dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginTop="296dp"
+        android:layout_marginTop="256dp"
         android:onClick="submitInfoButton"
         android:text="Create Contact"
         app:layout_constraintHorizontal_bias="0.502"
