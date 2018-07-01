@@ -31,7 +31,6 @@ public class CreateContactAcitivity extends Activity {
     public void submitInfoButton(View v) {
         //each entry needs a unique ID
         String personID = appState.firebaseReference.push().getKey();
-        System.out.println("\n\n\npersonID: " + personID + "\n\n"); // REMOVE LATER ON
         String name = nameField.getText().toString();
         String email = emailField.getText().toString();
         String number = numberField.getText().toString();
