@@ -6,6 +6,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+/**
+ * Displays empty fields for creating a contact
+ */
 public class CreateContactAcitivity extends Activity {
 
     private Button submitButton;
