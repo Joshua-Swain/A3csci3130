@@ -9,6 +9,10 @@ import android.widget.EditText;
 
 import java.util.List;
 
+/**
+ * Shows user data for the Contact that was selected
+ * Allows user to view, change, update, or erase the contact.
+ */
 public class DetailViewActivity extends Activity{
 
     private EditText nameField, emailField, numberField, addressField, businessField, ptField;
@@ -46,6 +50,10 @@ public class DetailViewActivity extends Activity{
         updateButton = (Button) findViewById(R.id.updateButton);
     }
 
+    /**
+     * Sends the displayed contact data to the database
+     * @param v Context for the update
+     */
     public void updateContact(View v){
         //TODO: Update contact functionality
         if (!this.personId.isEmpty()) {
@@ -59,15 +67,21 @@ public class DetailViewActivity extends Activity{
             Contact updatedPerson = new Contact(personId, name, email, number, address, business, pt);
 
             appState.firebaseReference.child(personId).setValue(updatedPerson);
+
+            finish();
         }
     }
 
+    /**
+     * Removes contact from database and returns user to MainActivity
+     * @param v Context for the update
+     */
     public void eraseContact(View v)
     {
         //TODO: Erase contact functionality
         if (!this.personId.isEmpty()) {
             appState.firebaseReference.child(personId).setValue(null);
-            startActivity(new Intent(DetailViewActivity.this, MainActivity.class));
+            finish();
         }
     }
 }

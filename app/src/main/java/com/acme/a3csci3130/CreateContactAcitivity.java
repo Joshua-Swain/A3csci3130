@@ -28,6 +28,11 @@ public class CreateContactAcitivity extends Activity {
         ptField = (EditText) findViewById(R.id.pt);
     }
 
+    /**
+     * Creates new Contact in the database
+     * Update will only happen if the fields follow the database rules.
+     * @param v Context
+     */
     public void submitInfoButton(View v) {
         //each entry needs a unique ID
         String personID = appState.firebaseReference.push().getKey();
